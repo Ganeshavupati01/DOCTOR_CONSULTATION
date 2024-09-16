@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my doctor consultation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+        header {
+            background-color: #004a98;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top:7%;
+        }
+         h2 {
+            color: #004a98;
+            text-align: center;
+        }
+        .options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .option {
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .option:hover {
+            transform: scale(1.1);
+        }
+        .option img {
+            max-width: 200px;
+            border-radius: 10px;
+        }
+        .option p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Doctor Consultation</h1>
+    </header>
+    <div class="container">
+        <h2>Select an Option:</h2>
+        <div class="options">
+            <div class="option" onclick="window.location.href='location.php'">
+                <img src="appp.jpg" alt="Hospital Building">
+                <p>Online Hospital Appointment Booking</p>
+            </div>
+            <div class="option">
+                <a href="http://localhost:5000">
+                    <img src="noona.jpg" alt="Doctor" style="border-radius: 50%;">
+                    <p>Disease Prediction By Noona!!</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
